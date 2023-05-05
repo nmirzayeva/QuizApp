@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+    <TextView
+
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="casual"
+        android:text="@string/result_title"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="117dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="casual"
+        android:text="@string/result_score"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultLabel" />
+
+    <Button
+        android:id="@+id/tryAgainBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#f6feff"
+        android:fontFamily="casual"
+        android:text="@string/btn_try_again"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreLabel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
